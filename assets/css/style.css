@@ -435,16 +435,27 @@ main {
   align-items: center;
   gap: 15px;
   padding-bottom: 4px;
-  padding-left: 7px;
+  
 }
 
 .social-item .social-link {
   color: var(--light-gray-70);
   font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.social-item .social-link .social-icon-img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  object-fit: contain;
+}
 
-.social-item .social-link:hover { color: var(--light-gray); }
+.social-item .social-link:hover {
+  color: var(--light-gray);
+}
 
 
 
@@ -545,6 +556,13 @@ main {
 .service-icon-box img { margin: auto; }
 
 .service-content-box { text-align: center; }
+
+.service-item--center {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 380px;
+  width: 100%;
+}
 
 .service-item-title { margin-bottom: 7px; }
 
@@ -857,7 +875,7 @@ main {
 .skill-progress-bg {
   background: var(--jet);
   width: 100%;
-  height: 8px;
+  height: 3px;
   border-radius: 10px;
 }
 
